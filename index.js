@@ -1,0 +1,6 @@
+function NewQuote(){
+    const quotes = Array("Lol I talk about how I'm a good person, because that I know I am.\nAnd that is something I take a lot of pride in. \nWanting to help people and staingi at the bottom is being a good person.", "Before we start speaking, I want you to think of just how generous I've been.\nI could just ignore all of you, and nothing would change.\nAlso, I could literally ruin you all with my following, and my friends, but I've chosen to take a more mature route.", "I can't take the hate anymore, I just want to Fucking help people in my life, and this is literally making me want to change my mind, and just give up on people.", "I'm enlisted in the Marine Corps lol. \nMarines don't lie, cheat, or steal.\nI'm not a Marine yet, but I live by the philosophies. \nWhich that I do take much pride in.", "I'm always down, Like I said, I literally could've ignored this all, and the little movement you guys started would've died, but I don't like it when people hate me.");
+    return quotes[Math.floor(Math.random() * (quotes.length))];
+}
+
+document.getElementById("quoteLoader").innerHTML = '"' + NewQuote() + '"';
